@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+.flex-container {
+  font-family: Arial;
+  font-size: 20px;
+  display: block;
+    margin: 50px;
+
+}
+
+.element {
+
+
+}

@@ -1,0 +1,14 @@
+<ul>
+  <li> <% @articles.each do |art| %>
+    <h1> <%= link_to art.title, article_path(art) %> </h1>
+<!--     <img src="http://lorempixel.com/800/300/abstract/">
+ -->
+    <p> <%= art.content.first(50) %></p>
+    <p> <%= link_to "Edit", edit_article_path(art) %></p>
+    <p> <%= link_to "Delete", article_path(art),
+        method: :delete,
+        data: { confirm: "Are you sure?" } %> </p>
+
+    <% end %>
+  </li>
+</ul>
